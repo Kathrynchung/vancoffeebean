@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 6px solid #ffcc00;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #222;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            background-color: #f9f9f9;
+        }
+        .product-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-details {
+            padding: 20px;
+        }
+        .product-name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffcc00;
+        }
+        .banner {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: bannerAnimation 1s ease-in-out infinite alternate;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+        @keyframes bannerAnimation {
+            from {
+                background-color: #222;
+            }
+            to {
+                background-color: #444;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav {
+                padding: 10px 0;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            main {
+                padding: 30px 10px;
+            }
+            main h2 {
+                font-size: 24px;
+            }
+            main p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Coffee Shop</h1>
+        <p>Indulge in the Finest Coffee Experience</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <div class="banner">
+            <p>Enjoy our limited-time offer: 20% off on all coffee beverages!</p>
+        </div>
+        <h2>Our Menu</h2>
+        <div class="product">
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Espresso</h3>
+                    <p class="product-description">A rich and intense coffee shot brewed to perfection.</p>
+                    <p class="product-price">$2.99</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Cappuccino</h3>
+                    <p class="product-description">An Italian classic made with
+                        <p class="product-price">$3.49</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Latte</h3>
+                        <p class="product-description">A creamy and smooth coffee beverage made with espresso and steamed milk.</p>
+                        <p class="product-price">$3.99</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Americano</h3>
+                        <p class="product-description">A classic coffee drink made by diluting espresso with hot water.</p>
+                        <p class="product-price">$3.29</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Mocha</h3>
+                        <p class="product-description">A delightful combination of espresso, steamed milk, chocolate syrup, and whipped cream.</p>
+                        <p class="product-price">$4.49</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Coffee Image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Macchiato</h3>
+                        <p class="product-description">An espresso with a dollop of frothed milk on top, creating a bold and creamy flavor.</p>
+                        <p class="product-price">$3.79</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Contact us for inquiries: <a href="mailto:info@coffeeshop.com">info@coffeeshop.com</a></p>
+        </footer>
+    </body>
+    </html>
+    
